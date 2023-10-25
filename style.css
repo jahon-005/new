@@ -1,0 +1,550 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cabin:wght@100;200;300;400;500;600;700&display=swap);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-main {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header-main>img {
+    margin-left: 100px;
+}
+
+.header-menu>a {
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header-menu {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header-btns {
+    margin-left: 450px;
+    display: flex;
+    align-items: center;
+}
+
+select {
+    border: none;
+    color: #000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: transparent;
+    position: relative;
+    z-index: 100;
+}
+
+.header-btn1 {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-left: 40px;
+    cursor: grab;
+    position: relative;
+    z-index: 100;
+}
+
+.header-btn1:active {
+    transform: translateY(-5%);
+    cursor: grabbing;
+}
+
+.header {
+    height: 100vh;
+    background-color: orange;
+    width: 100%;
+}
+
+.header-about>h1 {
+    color: #000;
+    font-family: Cabin;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.header-about>p {
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 20px;
+}
+
+.header-about>button {
+    color: #fff;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.header-about>button:active {
+    transform: translateY(-5%);
+}
+
+.header-about {
+    width: 350px;
+    margin-left: 100px;
+}
+
+.header-back {
+    width: 650px;
+    height: 550px;
+    background: url(./city.jpg);
+    background-size: cover;
+    margin-left: 200px;
+    position: absolute;
+    border-radius: 500px;
+    left: 400px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-back::before {
+    content: '';
+    width: 650px;
+    height: 550px;
+    position: absolute;
+    z-index: 0;
+    background-size: cover;
+    background: radial-gradient(rgba(253, 248, 248, 0.5), rgba(227, 165, 50, 0.948), orange);
+    border-radius: 200px;
+}
+
+.header-next {
+    display: flex;
+    margin-top: 40px;
+}
+
+.images {
+    width: 350px;
+    height: 400px;
+    background: url(./Rectangle\ 1.png);
+    position: relative;
+    z-index: 100;
+    background-size: cover;
+}
+
+.images::before {
+    content: '';
+    position: absolute;
+    width: 520px;
+    right: -130px;
+    height: 480px;
+    top: 15px;
+    background: url(./alisher\ 3.png);
+    background-size: cover;
+}
+@media(min-width: 1700px){
+    .header-main {
+        width: 1700px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-main>img {
+        margin-left: 150px;
+        width: 230px;
+    }
+    
+    .header-menu>a {
+        color: #000;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    
+    .header-menu {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        width: 400px;
+    }
+    
+    .header-btns {
+        margin-left: 400px;
+        display: flex;
+        align-items: center;
+    }
+    
+    select {
+        border: none;
+        color: #000;
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        background-color: transparent;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .header-btn1 {
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        margin-left: 60px;
+        cursor: grab;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .header-btn1:active {
+        transform: translateY(-5%);
+        cursor: grabbing;
+    }
+    
+    .header {
+        height: 100vh;
+        background-color: orange;
+        width: 100%;
+    }
+    
+    .header-about>h1 {
+        color: #000;
+        font-family: Cabin;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+    
+    .header-about>p {
+        color: #000;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: 20px;
+    }
+    
+    .header-about>button {
+        color: #fff;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 24px;
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: #000;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    .header-about>button:active {
+        transform: translateY(-5%);
+    }
+    
+    .header-about {
+        width: 350px;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    
+    .header-back {
+        width: 850px;
+        height: 650px;
+        background: url(./city.jpg);
+        background-size: cover;
+        margin-left: 200px;
+        position: absolute;
+        border-radius: 500px;
+        left: 500px;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .header-back::before {
+        content: '';
+        width: 850px;
+        height: 680px;
+        position: absolute;
+        z-index: 0;
+        background-size: cover;
+        background: radial-gradient(rgba(253, 248, 248, 0.5), rgba(227, 165, 50, 0.948), orange);
+        border-radius: 200px;
+    }
+    
+    .header-next {
+        display: flex;
+        margin-top: 40px;
+    }
+    
+    .images {
+        width: 470px;
+        height: 540px;
+        background: url(./Rectangle\ 1.png);
+        position: relative;
+        z-index: 100;
+        background-size: cover;
+    }
+    
+    .images::before {
+        content: '';
+        position: absolute;
+        width: 650px;
+        right: -130px;
+        height: 600px;
+        top: 15px;
+        background: url(./alisher\ 3.png);
+        background-size: cover;
+    }
+}
+@media(min-width: 1750px){
+    .header-main {
+        width: 1750px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-main>img {
+        margin-left: 180px;
+        width: 210px;
+    }
+    
+    .header-menu>a {
+        color: #000;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Raleway;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    
+    .header-menu {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        width: 400px;
+    }
+    
+    .header-btns {
+        margin-left: 500px;
+        display: flex;
+        align-items: center;
+    }
+    
+    select {
+        border: none;
+        color: #000;
+        font-family: Raleway;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        background-color: transparent;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .header-btn1 {
+        width: 220px;
+        height: 70px;
+        border: none;
+        border-radius: 5px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        margin-left: 60px;
+        cursor: grab;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .header-btn1:active {
+        transform: translateY(-5%);
+        cursor: grabbing;
+    }
+    
+    .header {
+        height: 100vh;
+        background-color: orange;
+        width: 100%;
+    }
+    
+    .header-about>h1 {
+        color: #000;
+        font-family: Cabin;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+    
+    .header-about>p {
+        color: #000;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Raleway;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: 20px;
+    }
+    
+    .header-about>button {
+        color: #fff;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 24px;
+        width: 220px;
+        height: 70px;
+        border: none;
+        border-radius: 5px;
+        background-color: #000;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    .header-about>button:active {
+        transform: translateY(-5%);
+    }
+    
+    .header-about {
+        width: 350px;
+        margin-left: 180px;
+        margin-top: 20px;
+    }
+    
+    .header-back {
+        width: 950px;
+        height: 730px;
+        background: url(./city.jpg);
+        background-size: cover;
+        margin-left: 200px;
+        position: absolute;
+        border-radius: 500px;
+        left: 600px;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .header-back::before {
+        content: '';
+        width: 950px;
+        height: 730px;
+        position: absolute;
+        z-index: 0;
+        background-size: cover;
+        background: radial-gradient(rgba(253, 248, 248, 0.5), rgba(227, 165, 50, 0.948), orange);
+        border-radius: 200px;
+    }
+    
+    .header-next {
+        display: flex;
+        margin-top: 40px;
+    }
+    
+    .images {
+        width: 550px;
+        height: 550px;
+        background: url(./Rectangle\ 1.png);
+        position: relative;
+        z-index: 100;
+        background-size: cover;
+    }
+    
+    .images::before {
+        content: '';
+        position: absolute;
+        width: 720px;
+        right: -130px;
+        height: 645px;
+        top: 15px;
+        background: url(./alisher\ 3.png);
+        background-size: cover;
+    }
+}
